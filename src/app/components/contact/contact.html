@@ -1,0 +1,70 @@
+<section id="contact" @fadeIn>
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+
+        <div class="contact-wrapper">
+            <!-- Contact Info -->
+            <div class="contact-info-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="info-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:vigneshshank96@zohomail.in">vigneshshank96@zohomail.in</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="info-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <span>+91 7989810843</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="info-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links-contact">
+                    <a href="#" class="social-link-contact"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vignesh-sankar-b1aa77108/" class="social-link-contact"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-link-contact"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h3>Send a Message</h3>
+                <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required ngModel>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" name="email" placeholder="john@example.com" required ngModel email>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea rows="5" name="message" placeholder="Tell me about your project..." required ngModel></textarea>
+                    </div>
+                    <button type="submit" class="btn" [disabled]="!contactForm.valid || isSubmitting">
+                        {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+                    </button>
+                    <p class="form-status" *ngIf="submitStatus">{{ submitStatus }}</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

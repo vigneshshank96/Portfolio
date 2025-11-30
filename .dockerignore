@@ -1,0 +1,6 @@
+node_modules
+dist
+.git
+.gitignore
+legacy_v1
+.DS_Store

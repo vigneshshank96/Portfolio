@@ -1,0 +1,171 @@
+{
+    "about": {
+        "intro": "I am an experienced DevOps Engineer with a strong track record of designing scalable, secure, and fully automated cloud infrastructures. I specialize in Azure cloud, CI/CD pipeline engineering, and modern container orchestration—enabling engineering teams to deliver software faster, safer, and with greater reliability.",
+        "whatIDo": "I build and automate cloud-native environments that support seamless deployments, efficient operations, and high-performance applications. My experience spans end-to-end pipeline automation, container platform management, and production reliability engineering.",
+        "strengths": [
+            "Deep understanding of cloud security, RBAC policies, and governance frameworks",
+            "Strong focus on incident management, continuous improvement, and operational excellence",
+            "Proven ability to collaborate with cross-functional teams to streamline delivery cycles"
+        ],
+        "mission": "To accelerate business outcomes by delivering automation-driven, resilient, and scalable systems—powered by modern DevOps practices and cloud technologies."
+    },
+    "skills": {
+        "devops": [
+            {
+                "category": "Cloud Platform",
+                "items": [
+                    "Microsoft Azure",
+                    "Azure DevOps"
+                ]
+            },
+            {
+                "category": "Containerization & Orchestration",
+                "items": [
+                    "Docker",
+                    "Kubernetes/OpenShift",
+                    "Helm"
+                ]
+            },
+            {
+                "category": "CI/CD, Artifact & Secret Management",
+                "items": [
+                    "Azure CI/CD Pipelines",
+                    "Azure Key Vault",
+                    "JFrog Artifactory"
+                ]
+            },
+            {
+                "category": "Infrastructure as Code",
+                "items": [
+                    "Terraform",
+                    "Ansible"
+                ]
+            },
+            {
+                "category": "Version Control",
+                "items": [
+                    "Git"
+                ]
+            },
+            {
+                "category": "Monitoring & Observability",
+                "items": [
+                    "Prometheus",
+                    "Grafana",
+                    "Azure Monitoring Service"
+                ]
+            },
+            {
+                "category": "Agile Methodologies",
+                "items": [
+                    "Jira",
+                    "Confluence",
+                    "Azure Boards"
+                ]
+            },
+            {
+                "category": "Operating System",
+                "items": [
+                    "Linux"
+                ]
+            },
+            {
+                "category": "Scripting & Automation",
+                "items": [
+                    "Shell Scripting (Bash)"
+                ]
+            },
+            {
+                "category": "Backend Technologies",
+                "items": [
+                    "GoLang"
+                ]
+            },
+            {
+                "category": "Web Technologies",
+                "items": [
+                    "HTML",
+                    "CSS",
+                    "SASS",
+                    "Bootstrap",
+                    "JavaScript",
+                    "Angular v18"
+                ]
+            },
+            {
+                "category": "Testing Framework",
+                "items": [
+                    "Karma",
+                    "Jasmine"
+                ]
+            }
+        ]
+    },
+    "highlights": [
+        {
+            "title": "Frontend Development",
+            "description": "Building responsive and interactive UIs using React, Vue, and modern CSS."
+        },
+        {
+            "title": "Backend Development",
+            "description": "Creating RESTful APIs and microservices with Node.js, Python, and Go."
+        },
+        {
+            "title": "Cloud Computing",
+            "description": "Deploying and managing applications on AWS, Azure, and Google Cloud Platform."
+        },
+        {
+            "title": "Database Management",
+            "description": "Designing and optimizing SQL and NoSQL databases like PostgreSQL and MongoDB."
+        }
+    ],
+    "experience": [
+        {
+            "date": "Feb 2022 - Present",
+            "role": "DevOps Engineer / Senior Programmer",
+            "company": "Kumaran Systems",
+            "description": "• Developed and maintained Azure DevOps, CI/CD pipelines enabling automated build, test, and deployment workflows, resulting in faster and more reliable releases.\n• Designed, deployed, and managed containerized applications using Docker and Kubernetes/OpenShift to improve environment consistency and scalability.\n• Implemented Infrastructure as Code (IaC) using Terraform and Ansible to automate provisioning, configuration, and lifecycle management of cloud resources.\n• Integrated Helm charts for streamlined OCP deployment management and versioned application releases.\n• Managed build artifacts and Docker images through JFrog Artifactory, maintaining governance and integrity of deployment packages.\n• Configured end-to-end monitoring using Prometheus, Grafana, and Azure Monitor to improve system observability and reduce incident resolution time.\n• Utilized Git for version control and collaborated through branching, pull requests, and release management best practices.\n• Improved system reliability and performance through automation scripts using Bash on Linux-based environments.\n• Reduced costs around $120K by migrating legacy workloads and monolithic applications to cloud-native and containerized platform.\n• Creating/managing an automated DevOps release management pipeline which delivered tooling for next generation application development efforts (the Dev) and on-going production operations (the Ops).\n• Implemented Aqua scanning in CI/CD pipelines to improve compliance and strengthen container security monitoring.\n• Documented troubleshooting procedures and technical best practices in Confluence and Wiki, improving team knowledge sharing and reducing issue resolution time.\n• Reduced deployment lead time from weeks to days through Agile collaboration and DevOps automation adoption.\n• Hands-on experience with JIRA, ServiceNow, and Azure Boards for incident management, change tracking, and collaboration across Agile development and operations teams."
+        },
+        {
+            "date": "Jan 2020 - Nov 2021",
+            "role": "Full Stack Developer",
+            "company": "Tata Consultancy Services",
+            "description": "• Developed and maintained microservices in GoLang, leveraging Go routines and Channels for high-performance concurrency.\n• Working in container based technologies like Docker and Kubernetes.\n• Developed responsive, mobile-first web applications using Angular, TypeScript, HTML, CSS and Bootstrap with integrating third-party libraries and services.\n• Implemented lazy loading of routes in Angular applications to improve performance and reduce the initial loading time.\n• Implemented reactive and template-driven forms in Angular applications, including form validation and error handling.\n• Extensively used SASS for responsive design of application."
+        },
+        {
+            "date": "Nov 2018 - Dec 2019",
+            "role": "Associate Developer",
+            "company": "LtoCas",
+            "description": "• Developed reactive websites for desktop and mobile screens using HTML, CSS, JavaScript and Angular Framework and Involved in Unit testing of Application.\n• Involved in UI/UX design of the application using Angular."
+        }
+    ],
+    "projects": [
+        {
+            "title": "E-commerce Platform",
+            "description": "A full-featured online store with shopping cart, payment gateway, and admin dashboard.",
+            "tech": [
+                "React",
+                "Node.js",
+                "MongoDB"
+            ]
+        },
+        {
+            "title": "Task Management App",
+            "description": "A productivity tool for teams to collaborate and track project progress.",
+            "tech": [
+                "Vue.js",
+                "Firebase",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "title": "Portfolio Website",
+            "description": "A personal portfolio site to showcase skills and projects (like this one!).",
+            "tech": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        }
+    ]
+}

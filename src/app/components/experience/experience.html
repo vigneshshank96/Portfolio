@@ -1,0 +1,29 @@
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-grid" [@timelineAnimation]="data.length">
+            <div class="experience-card" *ngFor="let item of data; let i = index" [@cardAnimation]>
+                <div class="card-header">
+                    <div class="timeline-date">
+                        <i class="bi bi-calendar3"></i>
+                        {{ item.date }}
+                    </div>
+                    <h3>
+                        <i class="bi bi-briefcase"></i>
+                        {{ item.role }}
+                    </h3>
+                    <h4>
+                        <i class="bi bi-building"></i>
+                        {{ item.company }}
+                    </h4>
+                </div>
+                <ul class="experience-list">
+                    <li *ngFor="let point of getBulletPoints(item.description)">
+                        <i class="bi bi-arrow-right-circle bullet-icon"></i>
+                        <span class="bullet-text">{{ point }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

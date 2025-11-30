@@ -1,0 +1,31 @@
+<nav>
+        <div class="container nav-container">
+                <a href="#" class="logo" (click)="scrollTo('home', $event)">Vignesh Sankar</a>
+                <ul class="nav-links" [class.active]="isMenuOpen">
+                        <li><a href="#home" [class.active]="activeSection === 'home'"
+                                        (click)="scrollTo('home', $event)"></a>
+                        </li>
+                        <li><a href="#about" [class.active]="activeSection === 'about'"
+                                        (click)="scrollTo('about', $event)">About</a></li>
+                        <li><a href="#highlights" [class.active]="activeSection === 'highlights'"
+                                        (click)="scrollTo('highlights', $event)">Highlights</a></li>
+                        <li><a href="#skills" [class.active]="activeSection === 'skills'"
+                                        (click)="scrollTo('skills', $event)">Skills</a></li>
+                        <li><a href="#experience" [class.active]="activeSection === 'experience'"
+                                        (click)="scrollTo('experience', $event)">Experience</a></li>
+                        <li><a href="#projects" [class.active]="activeSection === 'projects'"
+                                        (click)="scrollTo('projects', $event)">Projects</a></li>
+                        <li><a href="#contact" [class.active]="activeSection === 'contact'"
+                                        (click)="scrollTo('contact', $event)">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                        <div class="menu-toggle" (click)="toggleMenu()">
+                                <i class="bi" [ngClass]="isMenuOpen ? 'bi-x-lg' : 'bi-list'"></i>
+                        </div>
+                        <button class="theme-toggle" (click)="toggleTheme()"
+                                [attr.aria-label]="(isDarkMode$ | async) ? 'Switch to light mode' : 'Switch to dark mode'">
+                                <i class="bi" [ngClass]="(isDarkMode$ | async) ? 'bi-sun' : 'bi-moon'"></i>
+                        </button>
+                </div>
+        </div>
+</nav>

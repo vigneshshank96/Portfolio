@@ -1,0 +1,18 @@
+<div class="space-background" id="spaceBackground"></div>
+<app-header></app-header>
+<main *ngIf="data">
+  <app-hero [data]="data"></app-hero>
+
+  <app-about [data]="data.about"></app-about>
+
+  <app-highlights [data]="data.highlights"></app-highlights>
+
+  <app-skills [data]="data.skills"></app-skills>
+
+  <app-experience [data]="data.experience"></app-experience>
+
+  <app-projects [data]="data.projects"></app-projects>
+
+  <app-contact></app-contact>
+</main>
+<app-footer></app-footer>

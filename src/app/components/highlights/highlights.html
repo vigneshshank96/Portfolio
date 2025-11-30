@@ -1,0 +1,11 @@
+<section id="highlights">
+    <div class="container">
+        <h2>Highlights</h2>
+        <div class="grid" [@listAnimation]="data.length">
+            <div class="card" *ngFor="let item of data">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>

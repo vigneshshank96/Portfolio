@@ -1,0 +1,24 @@
+<section id="home" class="hero" @fadeIn>
+    <div class="container hero-content">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <p class="hero-subtitle">Hello, I'm</p>
+                <h1>Vignesh Sankar</h1>
+                <p class="hero-description">DevOps Engineer | Cloud Infrastructure | Automation & Reliability</p>
+                <div class="about-preview" *ngIf="data?.about">
+                    <p class="intro-text">{{ data?.about?.intro }}</p>
+                </div>
+                <!-- <div class="social-links">
+                    <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vignesh-sankar-b1aa77108/" class="social-icon"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-envelope"></i></a>
+                </div> -->
+            </div>
+            <div class="profile-img-container">
+                <img src="assets/images/dp.gif" alt="Minecraft Character" class="minecraft-character" id="minecraftChar">
+            </div>
+        </div>
+    </div>
+</section>

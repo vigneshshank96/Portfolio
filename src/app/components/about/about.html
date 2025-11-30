@@ -1,0 +1,25 @@
+<section id="about" @fadeIn>
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content" *ngIf="data">
+            <p class="intro">{{ data.intro }}</p>
+
+            <div class="about-section" *ngIf="data.whatIDo">
+                <h3>What I Do</h3>
+                <p>{{ data.whatIDo }}</p>
+            </div>
+
+            <div class="about-section" *ngIf="data.strengths && data.strengths.length > 0">
+                <h3>Strengths</h3>
+                <ul class="strengths-list">
+                    <li *ngFor="let strength of data.strengths">{{ strength }}</li>
+                </ul>
+            </div>
+
+            <div class="about-section" *ngIf="data.mission">
+                <h3>My Mission</h3>
+                <p class="mission">{{ data.mission }}</p>
+            </div>
+        </div>
+    </div>
+</section>
