@@ -1,8 +1,11 @@
-<section id="highlights">
+<section id="industryKnowledge">
     <div class="container">
-        <h2>Highlights</h2>
+        <h2>Industry Knowledge</h2>
         <div class="grid" [@listAnimation]="data.length">
             <div class="card" *ngFor="let item of data">
+                <div class="icon-wrapper" *ngIf="item.icon">
+                    <i class="bi" [ngClass]="item.icon" [style.color]="item.color" style="font-size: 4rem;"></i>
+                </div>
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
             </div>

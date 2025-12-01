@@ -1,5 +1,5 @@
 .about-content {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -18,6 +18,25 @@
     border: 1px solid var(--border-color);
     transition: var(--transition-medium);
     backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gradient-text);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--transition-medium);
+}
+
+.about-section:hover::before {
+    transform: scaleY(1);
 }
 
 body.dark-theme .about-section {

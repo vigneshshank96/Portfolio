@@ -1,18 +1,21 @@
 <div class="space-background" id="spaceBackground"></div>
 <app-header></app-header>
-<main *ngIf="data">
+<main>
   <app-hero [data]="data"></app-hero>
 
-  <app-about [data]="data.about"></app-about>
+  <ng-container *ngIf="data">
+    <app-about [data]="data.about"></app-about>
 
-  <app-highlights [data]="data.highlights"></app-highlights>
+    <app-highlights [data]="data.industryKnowledge"></app-highlights>
 
-  <app-skills [data]="data.skills"></app-skills>
+    <app-skills [data]="data.skills"></app-skills>
 
-  <app-experience [data]="data.experience"></app-experience>
+    <app-experience [data]="data.experience"></app-experience>
 
-  <app-projects [data]="data.projects"></app-projects>
+    <app-projects [data]="data.projects"></app-projects>
+    <app-certifications [data]="data.certifications"></app-certifications>
 
-  <app-contact></app-contact>
+    <app-contact></app-contact>
+  </ng-container>
 </main>
 <app-footer></app-footer>

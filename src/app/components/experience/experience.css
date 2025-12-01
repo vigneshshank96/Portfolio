@@ -2,30 +2,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--spacing-lg);
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     align-items: start;
 }
 
 @media (min-width: 1200px) {
     .experience-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .experience-card:first-child {
-        grid-column: 1 / -1;
-        grid-row: 1;
-    }
-    
-    .experience-card:nth-child(2) {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    
-    .experience-card:nth-child(3) {
-        grid-column: 1;
-        grid-row: 2;
-        align-self: start;
+        grid-template-columns: 1fr;
     }
 }
 

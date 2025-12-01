@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Highlight } from '../../services/data.service';
+import { industryKnowledge } from '../../services/data.service';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 
 @Component({
@@ -23,5 +23,5 @@ import { trigger, transition, style, animate, query, stagger } from '@angular/an
   ]
 })
 export class HighlightsComponent {
-  @Input() data: Highlight[] = [];
+  @Input() data: industryKnowledge[] = [];
 }

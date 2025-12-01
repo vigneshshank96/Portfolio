@@ -9,6 +9,7 @@ import { ExperienceComponent } from './components/experience/experience';
 import { ProjectsComponent } from './components/projects/projects';
 import { ContactComponent } from './components/contact/contact';
 import { SkillsComponent } from './components/skills/skills';
+import { CertificationsComponent } from './components/certifications/certifications';
 import { DataService, PortfolioData } from './services/data.service';
 import { ThemeService } from './services/theme.service';
 import { CommonModule } from '@angular/common';
@@ -28,6 +29,7 @@ import { Subscription } from 'rxjs';
     ProjectsComponent,
     ContactComponent,
     SkillsComponent,
+    CertificationsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -120,6 +122,16 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       const suit2 = document.createElement('div');
       suit2.className = 'space-suit suit2';
       spaceBg.appendChild(suit2);
+
+      // Create shooting stars
+      for (let i = 0; i < 5; i++) {
+        const shootingStar = document.createElement('div');
+        shootingStar.className = 'shooting-star';
+        shootingStar.style.top = Math.random() * 50 + '%';
+        shootingStar.style.left = Math.random() * 100 + '%';
+        shootingStar.style.animationDelay = Math.random() * 5 + 's';
+        spaceBg.appendChild(shootingStar);
+      }
     } else if (document.body.classList.contains('light-theme')) {
       // Create light mode decorative elements
       for (let i = 0; i < 50; i++) {
@@ -141,6 +153,21 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         shape.style.top = Math.random() * 100 + '%';
         shape.style.animationDelay = Math.random() * 10 + 's';
         spaceBg.appendChild(shape);
+      }
+
+      // Create colorful floating bubbles
+      const colors = ['rgba(6, 182, 212, 0.4)', 'rgba(59, 130, 246, 0.4)', 'rgba(16, 185, 129, 0.4)', 'rgba(245, 158, 11, 0.4)'];
+      for (let i = 0; i < 15; i++) {
+        const bubble = document.createElement('div');
+        bubble.className = 'light-bubble';
+        bubble.style.left = Math.random() * 100 + '%';
+        bubble.style.top = Math.random() * 100 + '%';
+        bubble.style.width = (Math.random() * 60 + 20) + 'px';
+        bubble.style.height = bubble.style.width;
+        bubble.style.background = colors[Math.floor(Math.random() * colors.length)];
+        bubble.style.animationDelay = Math.random() * 5 + 's';
+        bubble.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        spaceBg.appendChild(bubble);
       }
     }
   }
@@ -189,6 +216,13 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         const speed = (index + 1) * 0.03;
         const currentTransform = (shape as HTMLElement).style.transform || '';
         (shape as HTMLElement).style.transform = currentTransform.replace(/translateY\([^)]*\)/, '') + ` translateY(${scrollY * speed}px)`;
+      });
+
+      const bubbles = spaceBg.querySelectorAll('.light-bubble');
+      bubbles.forEach((bubble, index) => {
+        const speed = (index % 4 + 1) * 0.08;
+        const currentTransform = (bubble as HTMLElement).style.transform || '';
+        (bubble as HTMLElement).style.transform = currentTransform.replace(/translateY\([^)]*\)/, '') + ` translateY(-${scrollY * speed}px)`;
       });
     }
   }

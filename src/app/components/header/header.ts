@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../../services/theme.service';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -11,15 +12,29 @@ import { ThemeService } from '../../services/theme.service';
 })
 export class HeaderComponent {
   isMenuOpen = false;
-  activeSection = 'home';
+  activeSection = 'hero';
   isDarkMode$: any
+
+  showThemeTooltip = false;
 
   constructor(private themeService: ThemeService) {
     this.isDarkMode$ = this.themeService.isDarkMode$;
   }
 
   toggleTheme() {
+    this.isDarkMode$.pipe(take(1)).subscribe((isDark: boolean) => {
+      if (isDark) {
+        this.showThemeTooltip = !this.showThemeTooltip;
+      } else {
+        this.themeService.toggleTheme();
+        this.showThemeTooltip = false;
+      }
+    });
+  }
+
+  confirmThemeChange() {
     this.themeService.toggleTheme();
+    this.showThemeTooltip = false;
   }
 
   toggleMenu() {
@@ -49,7 +64,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['home', 'about', 'highlights', 'skills', 'experience', 'projects', 'contact'];
+    const sections = ['hero', 'about', 'industryKnowledge', 'skills', 'experience', 'projects', 'certifications', 'contact'];
     const scrollPosition = window.scrollY + 200; // Offset
 
     for (const section of sections) {

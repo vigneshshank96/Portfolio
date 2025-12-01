@@ -1,0 +1,43 @@
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gradient-text);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--transition-medium);
+}
+
+.card:hover::before {
+    transform: scaleY(1);
+}
+
+.icon-wrapper {
+    margin-bottom: var(--spacing-md);
+    text-align: left;
+}
+
+.icon-wrapper i {
+    font-size: 2.5rem;
+    transition: transform var(--transition-fast);
+    display: inline-block;
+}
+
+.card:hover .icon-wrapper i {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin-top: var(--spacing-sm);
+}

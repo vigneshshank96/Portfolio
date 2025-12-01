@@ -66,19 +66,24 @@
             {
                 "category": "Operating System",
                 "items": [
-                    "Linux"
+                    "Linux",
+                    "Windows",
+                    "MacOS"
                 ]
             },
             {
                 "category": "Scripting & Automation",
                 "items": [
-                    "Shell Scripting (Bash)"
+                    "Shell Scripting"
                 ]
             },
             {
-                "category": "Backend Technologies",
+                "category": "Backend & Database",
                 "items": [
-                    "GoLang"
+                    "GoLang",
+                    "Rest API",
+                    "MySql",
+                    "Azure SQL"
                 ]
             },
             {
@@ -89,7 +94,7 @@
                     "SASS",
                     "Bootstrap",
                     "JavaScript",
-                    "Angular v18"
+                    "Angular"
                 ]
             },
             {
@@ -101,22 +106,106 @@
             }
         ]
     },
-    "highlights": [
+    "certifications": [
         {
-            "title": "Frontend Development",
-            "description": "Building responsive and interactive UIs using React, Vue, and modern CSS."
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "issuer": "Microsoft",
+            "logo": "bi-microsoft-teams",
+            "issued": "Jan 2023",
+            "skills": [
+                "AWS",
+                "Cloud Architecture",
+                "Solutions Design"
+            ],
+            "credentialUrl": "https://learn.microsoft.com/api/credentials/share/en-us/vigneshsankar-0211/F6CDFD65932C6E43?sharingId=81D8260E4AA06E6F",
+            "verified": true
         },
         {
-            "title": "Backend Development",
-            "description": "Creating RESTful APIs and microservices with Node.js, Python, and Go."
+            "name": "Microsoft Certified: Azure Data Engineer Associate",
+            "issuer": "Microsoft",
+            "logo": "bi-microsoft-teams",
+            "issued": "Feb 2023",
+            "expires": "Feb 2024",
+            "skills": [
+                "Design and implement data storage",
+                "Develop data processing",
+                "Secure, monitor, and optimize data storage and data processing"
+            ],
+            "credentialUrl": "https://learn.microsoft.com/api/credentials/share/en-us/vigneshsankar-0211/7F16242BFFDF85DD?sharingId=81D8260E4AA06E6F",
+            "verified": true
         },
         {
-            "title": "Cloud Computing",
-            "description": "Deploying and managing applications on AWS, Azure, and Google Cloud Platform."
+            "name": "Microsoft Certified: Azure DevOps Expert",
+            "issuer": "Microsoft",
+            "logo": "bi-microsoft-teams",
+            "issued": "Dec 2025",
+            "expires": "Dec 2028",
+            "skills": [
+                "Azure DevOps",
+                "Infrastructure as Code",
+                "Automation",
+                "CI/CD",
+                "Secret Management",
+                "Monitoring & Observability"
+            ],
+            "credentialUrl": "#",
+            "verified": true
+        }
+    ],
+    "industryKnowledge": [
+        {
+            "title": "Continuous Integration & Continuous Delivery",
+            "description": "Advanced CI/CD pipeline implementation with automated testing, deployment, and rollback strategies.",
+            "icon": "bi-arrow-repeat",
+            "color": "#10b981"
         },
         {
-            "title": "Database Management",
-            "description": "Designing and optimizing SQL and NoSQL databases like PostgreSQL and MongoDB."
+            "title": "Containerization & Orchestration",
+            "description": "Creating containerized applications and orchestrating them using Kubernetes and Docker.",
+            "icon": "bi-box-seam",
+            "color": "#06b6d4"
+        },
+        {
+            "title": "High Availability (HA)",
+            "description": "Design and implement fault-tolerant systems with 99.9% uptime and disaster recovery capabilities.",
+            "icon": "bi-shield-check",
+            "color": "#ef4444"
+        },
+        {
+            "title": "Incident Management",
+            "description": "Rapid incident response, root cause analysis, and preventive measures implementation.",
+            "icon": "bi-exclamation-triangle",
+            "color": "#f59e0b"
+        },
+        {
+            "title": "Process Automation",
+            "description": "End-to-end workflow automation reducing manual intervention by 85%.",
+            "icon": "bi-gear-wide-connected",
+            "color": "#3b82f6"
+        },
+        {
+            "title": "Release Engineering",
+            "description": "Streamlined release management with automated deployment pipelines and rollback capabilities.",
+            "icon": "bi-send",
+            "color": "#8b5cf6"
+        },
+        {
+            "title": "Scrum & Agile Methodologies",
+            "description": "Expert in Scrum framework implementation, sprint planning, and agile team facilitation.",
+            "icon": "bi-people",
+            "color": "#14b8a6"
+        },
+        {
+            "title": "SonarQube",
+            "description": "Code quality analysis, security vulnerability detection, and technical debt management.",
+            "icon": "bi-code-square",
+            "color": "#f43f5e"
+        },
+        {
+            "title": "Full stack development",
+            "description": "Building end to end full-stack applications using Angular, Go, and TypeScript.",
+            "icon": "bi-diagram-3",
+            "color": "#ec4899"
         }
     ],
     "experience": [
@@ -141,21 +230,37 @@
     ],
     "projects": [
         {
-            "title": "E-commerce Platform",
-            "description": "A full-featured online store with shopping cart, payment gateway, and admin dashboard.",
+            "title": "Enterprise Product Catalog",
+            "description": "A featured product catalog for enterprise customers with pre-ordering and inventory management capabilities.",
             "tech": [
-                "React",
-                "Node.js",
-                "MongoDB"
+                "Angular",
+                "Docker",
+                "Kubernetes",
+                "Azure Devops",
+                "Ci/Cd Pipelines",
+                "Jenkins",
+                "Git",
+                "JFrog Artifactory",
+                "Prometheus",
+                "Grafana",
+                "Azure Monitor"
             ]
         },
         {
-            "title": "Task Management App",
-            "description": "A productivity tool for teams to collaborate and track project progress.",
+            "title": "Capital Markets",
+            "description": "A trading platform feature which has ability to trade stocks, options and display option chain.",
             "tech": [
-                "Vue.js",
-                "Firebase",
-                "Tailwind CSS"
+                "Angular",
+                "Docker",
+                "Kubernetes",
+                "Azure Devops",
+                "Ci/Cd Pipelines",
+                "Jenkins",
+                "Git",
+                "JFrog Artifactory",
+                "Prometheus",
+                "Grafana",
+                "Azure Monitor"
             ]
         },
         {
@@ -164,7 +269,9 @@
             "tech": [
                 "HTML",
                 "CSS",
-                "JavaScript"
+                "JavaScript",
+                "Angular",
+                "firebase"
             ]
         }
     ]

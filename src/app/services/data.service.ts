@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-export interface Highlight {
+export interface industryKnowledge {
   title: string;
   description: string;
+  icon?: string;
+  color?: string;
 }
 
 export interface Experience {
@@ -27,7 +29,6 @@ export interface SkillCategory {
 
 export interface Skills {
   devops: SkillCategory[];
-  additional: SkillCategory[];
 }
 
 export interface About {
@@ -37,12 +38,24 @@ export interface About {
   mission?: string;
 }
 
+export interface Certification {
+  name: string;
+  issuer: string;
+  logo?: string;
+  issued: string;
+  expires?: string;
+  skills?: string[];
+  credentialUrl?: string;
+  verified: boolean;
+}
+
 export interface PortfolioData {
   about: About;
   skills: Skills;
-  highlights: Highlight[];
+  industryKnowledge: industryKnowledge[];
   experience: Experience[];
   projects: Project[];
+  certifications: Certification[];
 }
 
 @Injectable({

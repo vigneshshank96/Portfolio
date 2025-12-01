@@ -2,7 +2,11 @@
     <div class="container">
         <h2>About Me</h2>
         <div class="about-content" *ngIf="data">
-            <p class="intro">{{ data.intro }}</p>
+
+            <div class="about-section" *ngIf="data">
+                <h3>Who I am</h3>
+                <p>{{ data.intro }}</p>
+            </div>
 
             <div class="about-section" *ngIf="data.whatIDo">
                 <h3>What I Do</h3>
