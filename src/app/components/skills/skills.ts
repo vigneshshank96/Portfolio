@@ -43,7 +43,7 @@ export class SkillsComponent {
     'Agile Methodologies': { icon: 'bi-kanban', color: '#ec4899' },
     'Operating System': { icon: 'bi-server', color: '#14b8a6' },
     'Scripting & Automation': { icon: 'bi-terminal', color: '#06b6d4' },
-    'Backend Technologies': { icon: 'bi-database', color: '#3b82f6' },
+    'Backend & Database': { icon: 'bi-database', color: '#3b82f6' },
     'Web Technologies': { icon: 'bi-globe', color: '#10b981' },
     'Testing Framework': { icon: 'bi-bug', color: '#f59e0b' }
   };

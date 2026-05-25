@@ -1,6 +1,13 @@
 <section id="projects">
     <div class="container">
-        <h2>Projects</h2>
+        <div class="section-head">
+            <div class="section-eyebrow">
+                <span class="num">05</span>
+                <span class="dash"></span>
+                Projects
+            </div>
+            <h2>What I've Built</h2>
+        </div>
         <div class="grid" [@listAnimation]="data.length">
             <div class="card" *ngFor="let item of data">
                 <h3>{{ item.title }}</h3>

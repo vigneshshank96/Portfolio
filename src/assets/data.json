@@ -1,0 +1,278 @@
+{
+    "about": {
+        "intro": "I am an experienced DevOps Engineer with a strong track record of designing scalable, secure, and fully automated cloud infrastructures. I specialize in Azure cloud, CI/CD pipeline engineering, and modern container orchestration—enabling engineering teams to deliver software faster, safer, and with greater reliability.",
+        "whatIDo": "I build and automate cloud-native environments that support seamless deployments, efficient operations, and high-performance applications. My experience spans end-to-end pipeline automation, container platform management, and production reliability engineering.",
+        "strengths": [
+            "Deep understanding of cloud security, RBAC policies, and governance frameworks",
+            "Strong focus on incident management, continuous improvement, and operational excellence",
+            "Proven ability to collaborate with cross-functional teams to streamline delivery cycles"
+        ],
+        "mission": "To accelerate business outcomes by delivering automation-driven, resilient, and scalable systems—powered by modern DevOps practices and cloud technologies."
+    },
+    "skills": {
+        "devops": [
+            {
+                "category": "Cloud Platform",
+                "items": [
+                    "Microsoft Azure",
+                    "Azure DevOps"
+                ]
+            },
+            {
+                "category": "Containerization & Orchestration",
+                "items": [
+                    "Docker",
+                    "Kubernetes/OpenShift",
+                    "Helm"
+                ]
+            },
+            {
+                "category": "CI/CD, Artifact & Secret Management",
+                "items": [
+                    "Azure CI/CD Pipelines",
+                    "Azure Key Vault",
+                    "JFrog Artifactory"
+                ]
+            },
+            {
+                "category": "Infrastructure as Code",
+                "items": [
+                    "Terraform",
+                    "Ansible"
+                ]
+            },
+            {
+                "category": "Version Control",
+                "items": [
+                    "Git"
+                ]
+            },
+            {
+                "category": "Monitoring & Observability",
+                "items": [
+                    "Prometheus",
+                    "Grafana",
+                    "Azure Monitoring Service"
+                ]
+            },
+            {
+                "category": "Agile Methodologies",
+                "items": [
+                    "Jira",
+                    "Confluence",
+                    "Azure Boards"
+                ]
+            },
+            {
+                "category": "Operating System",
+                "items": [
+                    "Linux",
+                    "Windows",
+                    "MacOS"
+                ]
+            },
+            {
+                "category": "Scripting & Automation",
+                "items": [
+                    "Shell Scripting"
+                ]
+            },
+            {
+                "category": "Backend & Database",
+                "items": [
+                    "GoLang",
+                    "Rest API",
+                    "MySql",
+                    "Azure SQL"
+                ]
+            },
+            {
+                "category": "Web Technologies",
+                "items": [
+                    "HTML",
+                    "CSS",
+                    "SASS",
+                    "Bootstrap",
+                    "JavaScript",
+                    "Angular"
+                ]
+            },
+            {
+                "category": "Testing Framework",
+                "items": [
+                    "Karma",
+                    "Jasmine"
+                ]
+            }
+        ]
+    },
+    "certifications": [
+        {
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "issuer": "Microsoft",
+            "logo": "bi-microsoft-teams",
+            "issued": "Jan 2023",
+            "skills": [
+                "AWS",
+                "Cloud Architecture",
+                "Solutions Design"
+            ],
+            "credentialUrl": "https://learn.microsoft.com/api/credentials/share/en-us/vigneshsankar-0211/F6CDFD65932C6E43?sharingId=81D8260E4AA06E6F",
+            "verified": true
+        },
+        {
+            "name": "Microsoft Certified: Azure Data Engineer Associate",
+            "issuer": "Microsoft",
+            "logo": "bi-microsoft-teams",
+            "issued": "Feb 2023",
+            "expires": "Feb 2024",
+            "skills": [
+                "Design and implement data storage",
+                "Develop data processing",
+                "Secure, monitor, and optimize data storage and data processing"
+            ],
+            "credentialUrl": "https://learn.microsoft.com/api/credentials/share/en-us/vigneshsankar-0211/7F16242BFFDF85DD?sharingId=81D8260E4AA06E6F",
+            "verified": true
+        },
+        {
+            "name": "Microsoft Certified: Azure DevOps Expert",
+            "issuer": "Microsoft",
+            "logo": "bi-microsoft-teams",
+            "issued": "Dec 2025",
+            "expires": "Dec 2028",
+            "skills": [
+                "Azure DevOps",
+                "Infrastructure as Code",
+                "Automation",
+                "CI/CD",
+                "Secret Management",
+                "Monitoring & Observability"
+            ],
+            "credentialUrl": "#",
+            "verified": true
+        }
+    ],
+    "industryKnowledge": [
+        {
+            "title": "Continuous Integration & Continuous Delivery",
+            "description": "Advanced CI/CD pipeline implementation with automated testing, deployment, and rollback strategies.",
+            "icon": "bi-arrow-repeat",
+            "color": "#10b981"
+        },
+        {
+            "title": "Containerization & Orchestration",
+            "description": "Creating containerized applications and orchestrating them using Kubernetes and Docker.",
+            "icon": "bi-box-seam",
+            "color": "#06b6d4"
+        },
+        {
+            "title": "High Availability (HA)",
+            "description": "Design and implement fault-tolerant systems with 99.9% uptime and disaster recovery capabilities.",
+            "icon": "bi-shield-check",
+            "color": "#ef4444"
+        },
+        {
+            "title": "Incident Management",
+            "description": "Rapid incident response, root cause analysis, and preventive measures implementation.",
+            "icon": "bi-exclamation-triangle",
+            "color": "#f59e0b"
+        },
+        {
+            "title": "Process Automation",
+            "description": "End-to-end workflow automation reducing manual intervention by 85%.",
+            "icon": "bi-gear-wide-connected",
+            "color": "#3b82f6"
+        },
+        {
+            "title": "Release Engineering",
+            "description": "Streamlined release management with automated deployment pipelines and rollback capabilities.",
+            "icon": "bi-send",
+            "color": "#8b5cf6"
+        },
+        {
+            "title": "Scrum & Agile Methodologies",
+            "description": "Expert in Scrum framework implementation, sprint planning, and agile team facilitation.",
+            "icon": "bi-people",
+            "color": "#14b8a6"
+        },
+        {
+            "title": "SonarQube",
+            "description": "Code quality analysis, security vulnerability detection, and technical debt management.",
+            "icon": "bi-code-square",
+            "color": "#f43f5e"
+        },
+        {
+            "title": "Full stack development",
+            "description": "Building end to end full-stack applications using Angular, Go, and TypeScript.",
+            "icon": "bi-diagram-3",
+            "color": "#ec4899"
+        }
+    ],
+    "experience": [
+        {
+            "date": "Feb 2022 - Present",
+            "role": "DevOps Engineer / Senior Programmer",
+            "company": "Kumaran Systems",
+            "description": "• Developed and maintained Azure DevOps, CI/CD pipelines enabling automated build, test, and deployment workflows, resulting in faster and more reliable releases.\n• Designed, deployed, and managed containerized applications using Docker and Kubernetes/OpenShift to improve environment consistency and scalability.\n• Implemented Infrastructure as Code (IaC) using Terraform and Ansible to automate provisioning, configuration, and lifecycle management of cloud resources.\n• Integrated Helm charts for streamlined OCP deployment management and versioned application releases.\n• Managed build artifacts and Docker images through JFrog Artifactory, maintaining governance and integrity of deployment packages.\n• Configured end-to-end monitoring using Prometheus, Grafana, and Azure Monitor to improve system observability and reduce incident resolution time.\n• Utilized Git for version control and collaborated through branching, pull requests, and release management best practices.\n• Improved system reliability and performance through automation scripts using Bash on Linux-based environments.\n• Reduced costs around $120K by migrating legacy workloads and monolithic applications to cloud-native and containerized platform.\n• Creating/managing an automated DevOps release management pipeline which delivered tooling for next generation application development efforts (the Dev) and on-going production operations (the Ops).\n• Implemented Aqua scanning in CI/CD pipelines to improve compliance and strengthen container security monitoring.\n• Documented troubleshooting procedures and technical best practices in Confluence and Wiki, improving team knowledge sharing and reducing issue resolution time.\n• Reduced deployment lead time from weeks to days through Agile collaboration and DevOps automation adoption.\n• Hands-on experience with JIRA, ServiceNow, and Azure Boards for incident management, change tracking, and collaboration across Agile development and operations teams."
+        },
+        {
+            "date": "Jan 2020 - Nov 2021",
+            "role": "Full Stack Developer",
+            "company": "Tata Consultancy Services",
+            "description": "• Developed and maintained microservices in GoLang, leveraging Go routines and Channels for high-performance concurrency.\n• Working in container based technologies like Docker and Kubernetes.\n• Developed responsive, mobile-first web applications using Angular, TypeScript, HTML, CSS and Bootstrap with integrating third-party libraries and services.\n• Implemented lazy loading of routes in Angular applications to improve performance and reduce the initial loading time.\n• Implemented reactive and template-driven forms in Angular applications, including form validation and error handling.\n• Extensively used SASS for responsive design of application."
+        },
+        {
+            "date": "Nov 2018 - Dec 2019",
+            "role": "Associate Developer",
+            "company": "LtoCas",
+            "description": "• Developed reactive websites for desktop and mobile screens using HTML, CSS, JavaScript and Angular Framework and Involved in Unit testing of Application.\n• Involved in UI/UX design of the application using Angular."
+        }
+    ],
+    "projects": [
+        {
+            "title": "Enterprise Product Catalog",
+            "description": "A featured product catalog for enterprise customers with pre-ordering and inventory management capabilities.",
+            "tech": [
+                "Angular",
+                "Docker",
+                "Kubernetes",
+                "Azure Devops",
+                "Ci/Cd Pipelines",
+                "Jenkins",
+                "Git",
+                "JFrog Artifactory",
+                "Prometheus",
+                "Grafana",
+                "Azure Monitor"
+            ]
+        },
+        {
+            "title": "Capital Markets",
+            "description": "A trading platform feature which has ability to trade stocks, options and display option chain.",
+            "tech": [
+                "Angular",
+                "Docker",
+                "Kubernetes",
+                "Azure Devops",
+                "Ci/Cd Pipelines",
+                "Jenkins",
+                "Git",
+                "JFrog Artifactory",
+                "Prometheus",
+                "Grafana",
+                "Azure Monitor"
+            ]
+        },
+        {
+            "title": "Portfolio Website",
+            "description": "A personal portfolio site to showcase skills and projects (like this one!).",
+            "tech": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Angular",
+                "firebase"
+            ]
+        }
+    ]
+}

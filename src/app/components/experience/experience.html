@@ -1,6 +1,13 @@
 <section id="experience">
     <div class="container">
-        <h2>Experience</h2>
+        <div class="section-head">
+            <div class="section-eyebrow">
+                <span class="num">04</span>
+                <span class="dash"></span>
+                Experience
+            </div>
+            <h2>Work History</h2>
+        </div>
         <div class="experience-grid" [@timelineAnimation]="data.length">
             <div class="experience-card" *ngFor="let item of data; let i = index" [@cardAnimation]>
                 <div class="card-header">
