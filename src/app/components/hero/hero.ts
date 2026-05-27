@@ -1,12 +1,12 @@
 import { Component, Input, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { PortfolioData } from '../../services/data.service';
 import { fadeInAnimation } from '../../animations';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
   animations: [fadeInAnimation]

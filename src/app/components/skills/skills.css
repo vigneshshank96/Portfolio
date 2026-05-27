@@ -29,7 +29,7 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
 }
@@ -135,5 +135,25 @@ body.light-theme .skill-card {
 
     .skill-category-name {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-card {
+        padding: 1.1rem;
+    }
+
+    .category-title {
+        font-size: 1.35rem;
+    }
+
+    .skill-badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        white-space: normal;
+    }
+
+    .skill-items {
+        gap: 6px;
     }
 }

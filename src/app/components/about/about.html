@@ -1,36 +1,44 @@
 <section id="about" @fadeIn>
-    <div class="container">
-        <div class="section-head">
-            <div class="section-eyebrow">
-                <span class="num">01</span>
-                <span class="dash"></span>
-                About Me
-            </div>
-            <h2>Who I Am</h2>
-        </div>
-        <div class="about-content" *ngIf="data">
-
-            <div class="about-section" *ngIf="data">
-                <h3>Who I am</h3>
-                <p>{{ data.intro }}</p>
-            </div>
-
-            <div class="about-section" *ngIf="data.whatIDo">
-                <h3>What I Do</h3>
-                <p>{{ data.whatIDo }}</p>
-            </div>
-
-            <div class="about-section" *ngIf="data.strengths && data.strengths.length > 0">
-                <h3>Strengths</h3>
-                <ul class="strengths-list">
-                    <li *ngFor="let strength of data.strengths">{{ strength }}</li>
-                </ul>
-            </div>
-
-            <div class="about-section" *ngIf="data.mission">
-                <h3>My Mission</h3>
-                <p class="mission">{{ data.mission }}</p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="num">01</span>
+        <span class="dash"></span>
+        About Me
+      </div>
+      <h2>Who I Am</h2>
     </div>
+    @if (data) {
+      <div class="about-content">
+        @if (data) {
+          <div class="about-section">
+            <h3>Who I am</h3>
+            <p>{{ data.intro }}</p>
+          </div>
+        }
+        @if (data.whatIDo) {
+          <div class="about-section">
+            <h3>What I Do</h3>
+            <p>{{ data.whatIDo }}</p>
+          </div>
+        }
+        @if (data.strengths && data.strengths.length > 0) {
+          <div class="about-section">
+            <h3>Strengths</h3>
+            <ul class="strengths-list">
+              @for (strength of data.strengths; track strength) {
+                <li>{{ strength }}</li>
+              }
+            </ul>
+          </div>
+        }
+        @if (data.mission) {
+          <div class="about-section">
+            <h3>My Mission</h3>
+            <p class="mission">{{ data.mission }}</p>
+          </div>
+        }
+      </div>
+    }
+  </div>
 </section>

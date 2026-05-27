@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    #projects .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #projects .card {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #projects .card h3 {
+        font-size: 1.1rem;
+    }
+
+    #projects .card p {
+        font-size: 0.9rem;
+    }
+}

@@ -12,14 +12,13 @@ import { SkillsComponent } from './components/skills/skills';
 import { CertificationsComponent } from './components/certifications/certifications';
 import { DataService, PortfolioData } from './services/data.service';
 import { ThemeService } from './services/theme.service';
-import { CommonModule } from '@angular/common';
+
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule,
     HeaderComponent,
     FooterComponent,
     HeroComponent,
@@ -29,8 +28,8 @@ import { Subscription } from 'rxjs';
     ProjectsComponent,
     ContactComponent,
     SkillsComponent,
-    CertificationsComponent,
-  ],
+    CertificationsComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

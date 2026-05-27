@@ -1,23 +1,27 @@
 <section id="projects">
-    <div class="container">
-        <div class="section-head">
-            <div class="section-eyebrow">
-                <span class="num">05</span>
-                <span class="dash"></span>
-                Projects
-            </div>
-            <h2>What I've Built</h2>
-        </div>
-        <div class="grid" [@listAnimation]="data.length">
-            <div class="card" *ngFor="let item of data">
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.description }}</p>
-                <div style="margin-top: 1rem;">
-                    <span *ngFor="let tech of item.tech"
-                        style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 5px; display: inline-block; margin-bottom: 5px;">{{
-                        tech }}</span>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="num">05</span>
+        <span class="dash"></span>
+        Projects
+      </div>
+      <h2>What I've Built</h2>
     </div>
+    <div class="grid" [@listAnimation]="data.length">
+      @for (item of data; track item) {
+        <div class="card">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <div style="margin-top: 1rem;">
+            @for (tech of item.tech; track tech) {
+              <span
+                style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 5px; display: inline-block; margin-bottom: 5px;">{{
+              tech }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
 </section>

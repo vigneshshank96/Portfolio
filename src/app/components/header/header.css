@@ -109,6 +109,17 @@
 
     .theme-tooltip {
         width: 200px;
-        right: -10px;
+        right: 0;
+        max-width: calc(100vw - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-tooltip {
+        width: 180px;
+    }
+
+    .theme-tooltip p {
+        font-size: 0.8rem;
     }
 }

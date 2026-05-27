@@ -1,50 +1,58 @@
 <section id="certifications">
-    <div class="container">
-        <div class="section-head">
-            <div class="section-eyebrow">
-                <span class="num">06</span>
-                <span class="dash"></span>
-                Certifications
-            </div>
-            <h2>Licenses & Certifications</h2>
-            <p class="section-subtitle">Professional certifications validating expertise in cloud platforms and DevOps practices.</p>
-        </div>
-
-        <div class="certifications-grid" *ngIf="data">
-            <div class="cert-card" *ngFor="let cert of data">
-                <div class="cert-header">
-                    <div class="cert-logo">
-                        <i class="bi" [ngClass]="cert.logo || 'bi-award'"></i>
-                    </div>
-                    <span class="verified-badge" *ngIf="cert.verified">
-                        <i class="bi bi-patch-check-fill"></i> Verified
-                    </span>
-                </div>
-
-                <h3 class="cert-name">{{ cert.name }}</h3>
-                <p class="cert-issuer">
-                    <i class="bi bi-building"></i> {{ cert.issuer }}
-                </p>
-
-                <div class="cert-dates">
-                    <p class="cert-date">
-                        <i class="bi bi-calendar-check"></i> Issued: {{ cert.issued }}
-                    </p>
-                    <p class="cert-date" *ngIf="cert.expires">
-                        <i class="bi bi-calendar-x"></i> Expires: {{ cert.expires }}
-                    </p>
-                </div>
-
-                <div class="cert-skills" *ngIf="cert.skills && cert.skills.length > 0">
-                    <p class="skills-label">Skills:</p>
-                    <p class="skills-list">{{ cert.skills.join(' - ') }}</p>
-                </div>
-
-                <a [href]="cert.credentialUrl || '#'" class="credential-btn" target="_blank" rel="noopener noreferrer"
-                    *ngIf="cert.credentialUrl">
-                    <i class="bi bi-box-arrow-up-right"></i> Show credential
-                </a>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="num">06</span>
+        <span class="dash"></span>
+        Certifications
+      </div>
+      <h2>Licenses & Certifications</h2>
+      <p class="section-subtitle">Professional certifications validating expertise in cloud platforms and DevOps practices.</p>
     </div>
+
+    @if (data) {
+      <div class="certifications-grid">
+        @for (cert of data; track cert) {
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-logo">
+                <i class="bi" [ngClass]="cert.logo || 'bi-award'"></i>
+              </div>
+              @if (cert.verified) {
+                <span class="verified-badge">
+                  <i class="bi bi-patch-check-fill"></i> Verified
+                </span>
+              }
+            </div>
+            <h3 class="cert-name">{{ cert.name }}</h3>
+            <p class="cert-issuer">
+              <i class="bi bi-building"></i> {{ cert.issuer }}
+            </p>
+            <div class="cert-dates">
+              <p class="cert-date">
+                <i class="bi bi-calendar-check"></i> Issued: {{ cert.issued }}
+              </p>
+              @if (cert.expires) {
+                <p class="cert-date">
+                  <i class="bi bi-calendar-x"></i> Expires: {{ cert.expires }}
+                </p>
+              }
+            </div>
+            @if (cert.skills && cert.skills.length > 0) {
+              <div class="cert-skills">
+                <p class="skills-label">Skills:</p>
+                <p class="skills-list">{{ cert.skills.join(' - ') }}</p>
+              </div>
+            }
+            @if (cert.credentialUrl) {
+              <a [href]="cert.credentialUrl || '#'" class="credential-btn" target="_blank" rel="noopener noreferrer"
+                >
+                <i class="bi bi-box-arrow-up-right"></i> Show credential
+              </a>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
 </section>

@@ -1,6 +1,6 @@
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     gap: var(--spacing-lg);
     max-width: 1200px;
     margin: 0 auto;
@@ -176,5 +176,32 @@ body.light-theme .experience-card {
 @media (max-width: 768px) {
     .experience-card {
         padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 1rem;
+    }
+
+    .experience-card h3 {
+        font-size: 1.15rem;
+        flex-wrap: wrap;
+    }
+
+    .experience-card h4 {
+        font-size: 0.95rem;
+        flex-wrap: wrap;
+    }
+
+    .timeline-date {
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .experience-list li {
+        padding: 0.4rem 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 }

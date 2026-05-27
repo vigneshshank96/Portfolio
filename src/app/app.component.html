@@ -4,19 +4,14 @@
 <main>
   <app-hero [data]="data"></app-hero>
 
-  <ng-container *ngIf="data">
+  @if (data) {
     <app-about [data]="data.about"></app-about>
-
     <app-highlights [data]="data.industryKnowledge"></app-highlights>
-
     <app-skills [data]="data.skills"></app-skills>
-
     <app-experience [data]="data.experience"></app-experience>
-
     <app-projects [data]="data.projects"></app-projects>
     <app-certifications [data]="data.certifications"></app-certifications>
-
     <app-contact></app-contact>
-  </ng-container>
+  }
 </main>
 <app-footer></app-footer>

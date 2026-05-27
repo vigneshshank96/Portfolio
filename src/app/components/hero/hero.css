@@ -5,6 +5,7 @@
     justify-content: center;
     padding-top: 120px;
     padding-bottom: var(--spacing-xl);
+    overflow: hidden;
 }
 
 .hero-content {
@@ -290,5 +291,57 @@
 
     .social-links {
         justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: auto;
+        padding-top: 420px;
+        padding-bottom: var(--spacing-xl);
+    }
+
+    .profile-img-container {
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .minecraft-character {
+        width: 200px;
+        height: 200px;
+        border-width: 4px;
+    }
+
+    .profile-img-container::before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.15rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .intro-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .about-preview {
+        padding: 1rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .social-links {
+        gap: 0.75rem;
+        flex-wrap: wrap;
     }
 }

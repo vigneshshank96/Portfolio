@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { Experience } from '../../services/data.service';
 import { trigger, transition, style, animate, query, stagger, state } from '@angular/animations';
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './experience.html',
   styleUrl: './experience.css',
   animations: [

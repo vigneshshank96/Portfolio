@@ -10,7 +10,7 @@
 
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: var(--spacing-lg);
     max-width: 1200px;
     margin: 0 auto;
@@ -192,5 +192,42 @@ body.light-theme .cert-card {
 
     .cert-name {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cert-card {
+        padding: 1rem;
+    }
+
+    .cert-header {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .cert-logo {
+        width: 42px;
+        height: 42px;
+        font-size: 1.25rem;
+    }
+
+    .verified-badge {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    .cert-name {
+        font-size: 1rem;
+    }
+
+    .cert-issuer {
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    .credential-btn {
+        width: 100%;
+        justify-content: center;
     }
 }

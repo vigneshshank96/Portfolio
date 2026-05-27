@@ -1,27 +1,33 @@
 <section id="skills" @fadeIn>
-    <div class="container">
-        <div class="section-head">
-            <div class="section-eyebrow">
-                <span class="num">03</span>
-                <span class="dash"></span>
-                Skills & Expertise
-            </div>
-            <h2>Tech Stack</h2>
-            <p class="section-subtitle">Technologies and tools I work with</p>
-        </div>
-
-        <div class="tech-grid" *ngIf="data" [@listAnimation]="data.devops.length">
-            <div class="tech-cluster" *ngFor="let skillCategory of data.devops">
-                <div class="t-head">
-                    <i class="bi"
-                       [ngClass]="getSkillIcon(skillCategory.category).icon"
-                       [ngStyle]="{'color': getSkillIcon(skillCategory.category).color}"></i>
-                    <span>{{ skillCategory.category }}</span>
-                </div>
-                <div class="t-items">
-                    <span class="t-tag" *ngFor="let item of skillCategory.items">{{ item }}</span>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="num">03</span>
+        <span class="dash"></span>
+        Skills & Expertise
+      </div>
+      <h2>Tech Stack</h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
     </div>
+
+    @if (data) {
+      <div class="tech-grid" [@listAnimation]="data.devops.length">
+        @for (skillCategory of data.devops; track skillCategory) {
+          <div class="tech-cluster">
+            <div class="t-head">
+              <i class="bi"
+                [ngClass]="getSkillIcon(skillCategory.category).icon"
+              [ngStyle]="{'color': getSkillIcon(skillCategory.category).color}"></i>
+              <span>{{ skillCategory.category }}</span>
+            </div>
+            <div class="t-items">
+              @for (item of skillCategory.items; track item) {
+                <span class="t-tag">{{ item }}</span>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
 </section>
