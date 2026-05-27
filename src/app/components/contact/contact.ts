@@ -44,4 +44,5 @@ export class ContactComponent {
         }, 5000);
       }, 1000);
     }
+  }
 }
