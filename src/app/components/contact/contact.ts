@@ -24,6 +24,7 @@ export class ContactComponent {
       this.submitStatus = '';
 
       const { name, email, message } = form.value;
+      console.log('Form Data:', { name, email, message });
 
       // Create mailto link
       const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
@@ -45,5 +46,4 @@ export class ContactComponent {
         }, 5000);
       }, 1000);
     }
-  }
 }
