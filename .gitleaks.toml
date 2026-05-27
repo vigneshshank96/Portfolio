@@ -1,0 +1,10 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allowlisted files and paths"
+paths = [
+  "package-lock.json",
+  ".firebase/",
+  "dist/"
+]

@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+
+echo "🔍 [pre-commit] Checking for console.log statements in staged files..."
+
+STAGED_TS=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(ts|js)$' | grep -v '\.spec\.' || true)
+
+if [ -n "$STAGED_TS" ]; then
+  MATCHES=$(grep -rn "console\.log" $STAGED_TS 2>/dev/null || true)
+  if [ -n "$MATCHES" ]; then
+    echo ""
+    echo "❌ console.log statements found in staged files:"
+    echo "$MATCHES"
+    echo ""
+    echo "Remove or replace with proper logging before committing."
+    exit 1
+  fi
+fi
+
+echo "✅ No console.log statements found."
+
+echo ""
+echo "🔐 [pre-commit] Running gitleaks to scan for secrets..."
+
+gitleaks protect --staged --redact --no-banner 2>&1
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Gitleaks detected potential secrets in staged files."
+  echo "Remove any sensitive data before committing."
+  exit 1
+fi
+
+echo "✅ No secrets detected."

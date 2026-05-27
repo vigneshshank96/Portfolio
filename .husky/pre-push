@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+echo "🏗️  [pre-push] Running production build to check for errors..."
+
+npx ng build --configuration production 2>&1
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Build failed. Fix all errors before pushing."
+  exit 1
+fi
+
+echo ""
+echo "✅ Build passed. Proceeding with push."
