@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { Skills } from '../../services/data.service';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 import { fadeInAnimation } from '../../animations';
@@ -12,7 +13,7 @@ interface SkillIcon {
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
   animations: [

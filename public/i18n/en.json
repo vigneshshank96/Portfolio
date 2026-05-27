@@ -1,0 +1,86 @@
+{
+  "NAV": {
+    "ABOUT": "About",
+    "INDUSTRY_KNOWLEDGE": "Industry Knowledge",
+    "SKILLS": "Skills",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "CERTIFICATIONS": "Certifications",
+    "CONTACT": "Contact",
+    "LOGO": "Vignesh Sankar"
+  },
+  "THEME": {
+    "TO_LIGHT_ARIA": "Switch to light mode",
+    "TO_DARK_ARIA": "Switch to dark mode",
+    "TOOLTIP_WARNING": "Warning: Light mode emits a gazillion lumens of pure radiance!",
+    "TOOLTIP_CONFIRM": "Go Light!"
+  },
+  "HERO": {
+    "AVAILABLE": "Available for opportunities",
+    "GREETING": "Hello, I'm",
+    "NAME": "Vignesh Sankar",
+    "TAGLINE": "DevOps Engineer | Cloud Infrastructure | Automation & Reliability",
+    "STAT_YEARS": "Years Experience",
+    "STAT_COMPANIES": "Companies",
+    "STAT_CERTS": "Certifications",
+    "IMG_ALT": "Minecraft Character"
+  },
+  "ABOUT": {
+    "EYEBROW": "About Me",
+    "HEADING": "Who I Am",
+    "WHO_I_AM": "Who I am",
+    "WHAT_I_DO": "What I Do",
+    "STRENGTHS": "Strengths",
+    "MISSION": "My Mission"
+  },
+  "HIGHLIGHTS": {
+    "EYEBROW": "Industry Knowledge",
+    "HEADING": "What I Know"
+  },
+  "SKILLS": {
+    "EYEBROW": "Skills & Expertise",
+    "HEADING": "Tech Stack",
+    "SUBTITLE": "Technologies and tools I work with"
+  },
+  "EXPERIENCE": {
+    "EYEBROW": "Experience",
+    "HEADING": "Work History"
+  },
+  "PROJECTS": {
+    "EYEBROW": "Projects",
+    "HEADING": "What I've Built"
+  },
+  "CERTIFICATIONS": {
+    "EYEBROW": "Certifications",
+    "HEADING": "Licenses & Certifications",
+    "SUBTITLE": "Professional certifications validating expertise in cloud platforms and DevOps practices.",
+    "VERIFIED": "Verified",
+    "ISSUED": "Issued",
+    "EXPIRES": "Expires",
+    "SKILLS_LABEL": "Skills:",
+    "SHOW_CREDENTIAL": "Show credential"
+  },
+  "CONTACT": {
+    "EYEBROW": "Contact",
+    "HEADING": "Get In Touch",
+    "SUBTITLE": "Have a project in mind? Let's work together!",
+    "INFO_TITLE": "Contact Information",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+    "LOCATION": "Location",
+    "LOCATION_VALUE": "India",
+    "FORM_TITLE": "Send a Message",
+    "LABEL_NAME": "Your Name",
+    "LABEL_EMAIL": "Your Email",
+    "LABEL_MESSAGE": "Your Message",
+    "PLACEHOLDER_NAME": "John Doe",
+    "PLACEHOLDER_EMAIL": "john@example.com",
+    "PLACEHOLDER_MESSAGE": "Tell me about your project...",
+    "SUBMIT": "Send Message",
+    "SUBMITTING": "Sending...",
+    "EMAIL_OPENED_STATUS": "Email client opened! Please send the email from your email application."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© {{year}} Vignesh Sankar. All rights reserved."
+  }
+}

@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills';
 import { CertificationsComponent } from './components/certifications/certifications';
 import { DataService, PortfolioData } from './services/data.service';
 import { ThemeService } from './services/theme.service';
+import { TranslateService } from '@ngx-translate/core';
 
 import { Subscription } from 'rxjs';
 
@@ -40,8 +41,11 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   constructor(
     private dataService: DataService,
-    private themeService: ThemeService
-  ) { }
+    private themeService: ThemeService,
+    private translate: TranslateService
+  ) {
+    this.translate.use('en');
+  }
 
   ngOnInit(): void {
     this.dataService.getData().subscribe(data => {

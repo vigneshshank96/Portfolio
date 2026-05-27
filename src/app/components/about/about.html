@@ -4,27 +4,27 @@
       <div class="section-eyebrow">
         <span class="num">01</span>
         <span class="dash"></span>
-        About Me
+        {{ 'ABOUT.EYEBROW' | translate }}
       </div>
-      <h2>Who I Am</h2>
+      <h2>{{ 'ABOUT.HEADING' | translate }}</h2>
     </div>
     @if (data) {
       <div class="about-content">
         @if (data) {
           <div class="about-section">
-            <h3>Who I am</h3>
+            <h3>{{ 'ABOUT.WHO_I_AM' | translate }}</h3>
             <p>{{ data.intro }}</p>
           </div>
         }
         @if (data.whatIDo) {
           <div class="about-section">
-            <h3>What I Do</h3>
+            <h3>{{ 'ABOUT.WHAT_I_DO' | translate }}</h3>
             <p>{{ data.whatIDo }}</p>
           </div>
         }
         @if (data.strengths && data.strengths.length > 0) {
           <div class="about-section">
-            <h3>Strengths</h3>
+            <h3>{{ 'ABOUT.STRENGTHS' | translate }}</h3>
             <ul class="strengths-list">
               @for (strength of data.strengths; track strength) {
                 <li>{{ strength }}</li>
@@ -34,7 +34,7 @@
         }
         @if (data.mission) {
           <div class="about-section">
-            <h3>My Mission</h3>
+            <h3>{{ 'ABOUT.MISSION' | translate }}</h3>
             <p class="mission">{{ data.mission }}</p>
           </div>
         }

@@ -4,11 +4,11 @@
       <div class="hero-text">
         <div class="status-pill">
           <span class="dot"></span>
-          Available for opportunities
+          {{ 'HERO.AVAILABLE' | translate }}
         </div>
-        <p class="hero-subtitle">Hello, I'm</p>
-        <h1>Vignesh Sankar</h1>
-        <p class="hero-description">DevOps Engineer | Cloud Infrastructure | Automation & Reliability</p>
+        <p class="hero-subtitle">{{ 'HERO.GREETING' | translate }}</p>
+        <h1>{{ 'HERO.NAME' | translate }}</h1>
+        <p class="hero-description">{{ 'HERO.TAGLINE' | translate }}</p>
         @if (data?.about) {
           <div class="about-preview">
             <p class="intro-text">{{ data?.about?.intro }}</p>
@@ -17,15 +17,15 @@
         <div class="hero-stats">
           <div class="cell">
             <span class="v">7+</span>
-            <span class="k">Years Experience</span>
+            <span class="k">{{ 'HERO.STAT_YEARS' | translate }}</span>
           </div>
           <div class="cell">
             <span class="v">3</span>
-            <span class="k">Companies</span>
+            <span class="k">{{ 'HERO.STAT_COMPANIES' | translate }}</span>
           </div>
           <div class="cell">
             <span class="v">3</span>
-            <span class="k">Certifications</span>
+            <span class="k">{{ 'HERO.STAT_CERTS' | translate }}</span>
           </div>
         </div>
         <div class="social-links">
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="profile-img-container">
-        <img src="assets/images/dp.gif" alt="Minecraft Character" class="minecraft-character"
+        <img src="assets/images/dp.gif" [alt]="'HERO.IMG_ALT' | translate" class="minecraft-character"
           id="minecraftChar">
       </div>
     </div>

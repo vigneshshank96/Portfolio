@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { Project } from '../../services/data.service';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
@@ -6,7 +7,7 @@ import { trigger, transition, style, animate, query, stagger } from '@angular/an
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
   animations: [

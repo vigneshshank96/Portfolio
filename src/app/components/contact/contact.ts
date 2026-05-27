@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { fadeInAnimation } from '../../animations';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
   animations: [fadeInAnimation]
@@ -14,6 +15,8 @@ import { fadeInAnimation } from '../../animations';
 export class ContactComponent {
   isSubmitting = false;
   submitStatus = '';
+
+  constructor(private translate: TranslateService) {}
 
   onSubmit(form: any) {
     if (form.valid) {
@@ -33,7 +36,7 @@ export class ContactComponent {
       // Reset form after a short delay
       setTimeout(() => {
         this.isSubmitting = false;
-        this.submitStatus = 'Email client opened! Please send the email from your email application.';
+        this.submitStatus = this.translate.instant('CONTACT.EMAIL_OPENED_STATUS');
         form.reset();
 
         // Clear status message after 5 seconds

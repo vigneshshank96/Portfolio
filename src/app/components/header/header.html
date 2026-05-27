@@ -1,25 +1,25 @@
 <nav>
   <div class="container nav-container">
-    <a href="#" class="logo" (click)="scrollTo('hero', $event)">Vignesh Sankar</a>
+    <a href="#" class="logo" (click)="scrollTo('hero', $event)">{{ 'NAV.LOGO' | translate }}</a>
     <ul class="nav-links" [class.active]="isMenuOpen">
       <li><a href="#hero" [class.active]="activeSection === 'hero'"
       (click)="scrollTo('hero', $event)"></a>
     </li>
     <li><a href="#about" [class.active]="activeSection === 'about'"
-    (click)="scrollTo('about', $event)">About</a></li>
+    (click)="scrollTo('about', $event)">{{ 'NAV.ABOUT' | translate }}</a></li>
     <li><a href="#industryKnowledge" [class.active]="activeSection === 'industryKnowledge'"
-    (click)="scrollTo('industryKnowledge', $event)">Industry Knowledge</a>
+    (click)="scrollTo('industryKnowledge', $event)">{{ 'NAV.INDUSTRY_KNOWLEDGE' | translate }}</a>
   </li>
   <li><a href="#skills" [class.active]="activeSection === 'skills'"
-  (click)="scrollTo('skills', $event)">Skills</a></li>
+  (click)="scrollTo('skills', $event)">{{ 'NAV.SKILLS' | translate }}</a></li>
   <li><a href="#experience" [class.active]="activeSection === 'experience'"
-  (click)="scrollTo('experience', $event)">Experience</a></li>
+  (click)="scrollTo('experience', $event)">{{ 'NAV.EXPERIENCE' | translate }}</a></li>
   <li><a href="#projects" [class.active]="activeSection === 'projects'"
-  (click)="scrollTo('projects', $event)">Projects</a></li>
+  (click)="scrollTo('projects', $event)">{{ 'NAV.PROJECTS' | translate }}</a></li>
   <li><a href="#certifications" [class.active]="activeSection === 'certifications'"
-  (click)="scrollTo('certifications', $event)">Certifications</a></li>
+  (click)="scrollTo('certifications', $event)">{{ 'NAV.CERTIFICATIONS' | translate }}</a></li>
   <li><a href="#contact" [class.active]="activeSection === 'contact'"
-  (click)="scrollTo('contact', $event)">Contact</a></li>
+  (click)="scrollTo('contact', $event)">{{ 'NAV.CONTACT' | translate }}</a></li>
 </ul>
 <div class="nav-actions">
   <div class="menu-toggle" (click)="toggleMenu()">
@@ -27,13 +27,13 @@
   </div>
   <div class="theme-toggle-wrapper">
     <button class="theme-toggle" (click)="toggleTheme()"
-      [attr.aria-label]="(isDarkMode$ | async) ? 'Switch to light mode' : 'Switch to dark mode'">
+      [attr.aria-label]="((isDarkMode$ | async) ? 'THEME.TO_LIGHT_ARIA' : 'THEME.TO_DARK_ARIA') | translate">
       <i class="bi" [ngClass]="(isDarkMode$ | async) ? 'bi-sun' : 'bi-moon'"></i>
     </button>
     @if (showThemeTooltip) {
       <div class="theme-tooltip">
-        <p>Warning: Light mode emits a gazillion lumens of pure radiance!</p>
-        <button class="btn-confirm" (click)="confirmThemeChange()">Go Light!</button>
+        <p>{{ 'THEME.TOOLTIP_WARNING' | translate }}</p>
+        <button class="btn-confirm" (click)="confirmThemeChange()">{{ 'THEME.TOOLTIP_CONFIRM' | translate }}</button>
       </div>
     }
   </div>

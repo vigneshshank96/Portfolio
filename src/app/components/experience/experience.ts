@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { Experience } from '../../services/data.service';
 import { trigger, transition, style, animate, query, stagger, state } from '@angular/animations';
@@ -6,7 +7,7 @@ import { trigger, transition, style, animate, query, stagger, state } from '@ang
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './experience.html',
   styleUrl: './experience.css',
   animations: [

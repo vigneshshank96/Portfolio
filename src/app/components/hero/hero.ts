@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { PortfolioData } from '../../services/data.service';
 import { fadeInAnimation } from '../../animations';
@@ -6,7 +7,7 @@ import { fadeInAnimation } from '../../animations';
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
   animations: [fadeInAnimation]
